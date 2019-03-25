@@ -15,4 +15,23 @@ public abstract class Electronics extends Product {
         this.brand=brand;
     }
 
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
 }
