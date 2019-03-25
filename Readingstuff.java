@@ -1,4 +1,4 @@
-public class Readingstuff extends Product {
+public abstract class Readingstuff extends Product {
     private int pageNumber;
     private String publisher;
     public Readingstuff(){
