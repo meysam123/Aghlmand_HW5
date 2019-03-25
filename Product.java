@@ -1,10 +1,30 @@
 public abstract class Product {
-    private final String name;
+    private  String name;
     private final int productID;
     private double price;
     public Product(String name,int productID,double price){
         this.name=name;
         this.productID=productID;
         this.price=price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getProductID() {
+        return productID;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
