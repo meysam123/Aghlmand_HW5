@@ -16,4 +16,32 @@ public class Address {
         this.street=street;
         this.postalCode=postalCode;
     }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public long getPostalCode() {
+        return postalCode;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setPostalCode(long postalCode) {
+        this.postalCode = postalCode;
+    }
 }
