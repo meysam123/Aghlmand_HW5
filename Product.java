@@ -27,4 +27,8 @@ public abstract class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+    @Override
+    public String toString(){
+        return String.format("ID: %s Name: %s Price: %s",getProductID(),getName(),getPrice());
+    }
 }
