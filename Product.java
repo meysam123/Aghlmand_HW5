@@ -1,11 +1,14 @@
 public abstract class Product {
     private  String name;
-    private final int productID;
+    private  int productID;
     private double price;
     public Product(String name,int productID,double price){
         this.name=name;
         this.productID=productID;
         this.price=price;
+    }
+    public Product(){
+        
     }
 
     public String getName() {
