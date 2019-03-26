@@ -22,6 +22,44 @@ public class CellPhone extends Electronics {
         this.ram=ram;
         this.cameraPixelSize=cameraPixelSize;
     }
-    
 
+    public OperatingSystem getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public ScreenType getScreenType() {
+        return screenType;
+    }
+
+    public int getMemory() {
+        return memory;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public int getCameraPixelSize() {
+        return cameraPixelSize;
+    }
+
+    public void setOperatingSystem(OperatingSystem operatingSystem) {
+        this.operatingSystem = operatingSystem;
+    }
+
+    public void setScreenType(ScreenType screenType) {
+        this.screenType = screenType;
+    }
+
+    public void setMemory(int memory) {
+        this.memory = memory;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public void setCameraPixelSize(int cameraPixelSize) {
+        this.cameraPixelSize = cameraPixelSize;
+    }
 }
