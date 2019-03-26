@@ -1,24 +1,24 @@
 public abstract class Readingstuff extends Product {
-    private int pageNumber;
+    private Subject subject;
     private String publisher;
     public Readingstuff(){
 
     }
-    public Readingstuff(int pageNumber,String publisher){
-        this.pageNumber=pageNumber;
+    public Readingstuff(Subject subject,String publisher){
+        this.subject=subject;
         this.publisher=publisher;
     }
 
-    public int getPageNumber() {
-        return pageNumber;
+    public Subject getSubject() {
+        return subject;
     }
 
     public String getPublisher() {
         return publisher;
     }
 
-    public void setPageNumber(int pageNumber) {
-        this.pageNumber = pageNumber;
+    public void setSubject(Subject subject) {
+        this.subject = subject;
     }
 
     public void setPublisher(String publisher) {
