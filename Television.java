@@ -1,16 +1,14 @@
 public class Television extends Electronics {
     private ScreenQuality screenQuality;
     private ScreenTechnology screenTechnology;
-    private int size;
     private int power;
     public Television(){
 
     }
-    public Television(Brand brand,ScreenQuality screenQuality,ScreenTechnology screenTechnology,int size,int power){
-        super(brand);
+    public Television(Brand brand,int size,ScreenQuality screenQuality,ScreenTechnology screenTechnology,int power){
+        super(brand,size);
         this.screenQuality=screenQuality;
         this.screenTechnology=screenTechnology;
-        this.size=size;
         this.power=power;
     }
 
@@ -22,9 +20,7 @@ public class Television extends Electronics {
         return screenTechnology;
     }
 
-    public int getSize() {
-        return size;
-    }
+
 
     public int getPower() {
         return power;
@@ -38,7 +34,5 @@ public class Television extends Electronics {
         this.screenTechnology = screenTechnology;
     }
 
-    public void setSize(int size) {
-        this.size = size;
-    }
+
 }
