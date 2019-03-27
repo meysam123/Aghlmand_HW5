@@ -8,6 +8,9 @@ public abstract class Product {
         this.productID=productID;
         this.price=price;
     }
+    public Product(){
+
+    }
 
     public int getQuantity() {
         return quantity;
