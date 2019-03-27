@@ -50,6 +50,13 @@ public class User {
         shoppingBasket.clear();
     }
     public void showShoppingBasket(){
-        System.out.println("Basket Items: "+"\n"+"------------------------");
+        if(this.shoppingBasket.size()==0)
+            System.out.println("Your Sopping Basket Is Empty");
+        else{
+            System.out.println("Basket Items: "+"\n"+"------------------------");
+            System.out.print("Product ID"+"\t"+"\t"+" Name"+"\t"+"Quantity"+"\n"+"----------------------------------");
+            shoppingBasket.forEach((n) -> System.out.println(n.getProductID()+"\t"+"\t"+n.getName()+"\t"+n.getQuantity()));
+        }
+
     }
 }
