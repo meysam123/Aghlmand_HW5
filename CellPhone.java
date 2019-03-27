@@ -62,4 +62,10 @@ public class CellPhone extends Electronics {
     public void setCameraPixelSize(int cameraPixelSize) {
         this.cameraPixelSize = cameraPixelSize;
     }
+    @Override
+    public String toString(){
+        return String.format("%-20s %s %n","Brand",getBrand())+String.format("%-20s %sGB %n","Memory",getMemory())+String.format("%-20s %sMB %n","RAM",getRam())+
+        String.format("%-20s %s %n","Operating System",getOperatingSystem())+String.format("%-20s %s %n","Screen Type",getScreenType())+
+         String.format("%-20s %sPixel %n","Camera",getCameraPixelSize());
+    }
 }

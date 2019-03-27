@@ -15,4 +15,10 @@ public class Magazine extends Readingstuff {
     public void setDelivered(Delivered delivered) {
         this.delivered = delivered;
     }
+
+    @Override
+    public String toString() {
+       return String.format("%-20s %s %n","Name:",getName())+String.format("%-20s %s %n","Publisher:",getPublisher())+
+        String.format("%-20s %s %n","Subject:",getSubject())+String.format("%-20s %s %n","Delivery:",getDelivered());
+    }
 }

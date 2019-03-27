@@ -25,4 +25,10 @@ public class Book extends Readingstuff {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%-20s %s %n","Name:",getName())+String.format("%-20s %s %n","Subject:",getSubject())+
+        String.format("%-20s %s %n","authorName:",getAuthorName())+String.format("%-20s %s %n","Page:",getPageNumber());
+    }
 }

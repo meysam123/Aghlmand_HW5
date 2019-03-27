@@ -34,5 +34,9 @@ public class Television extends Electronics {
         this.screenTechnology = screenTechnology;
     }
 
-
+    @Override
+    public String toString() {
+       return String.format("%-20s %s %n","Brand",getBrand())+String.format("%-20s %s inch %n","size ",getSize())+
+        String.format("%-20s %s %n","Screen Quality",getScreenQuality())+String.format("%-20s %s %n","Screen Technology",getScreenTechnology());
+    }
 }
